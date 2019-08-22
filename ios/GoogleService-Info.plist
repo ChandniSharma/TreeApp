@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>989098400535-p8kfepnha3bphn6lnl7po5qccacs1ivj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.989098400535-p8kfepnha3bphn6lnl7po5qccacs1ivj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBkBzWnbU6MPL_YwjJqbah2PqTuC0e15YY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>989098400535</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kkpl.TreeApp</string>
+	<key>PROJECT_ID</key>
+	<string>treeapp-3064e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>treeapp-3064e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:989098400535:ios:9077d67275abcb5f</string>
+	<key>DATABASE_URL</key>
+	<string>https://treeapp-3064e.firebaseio.com</string>
+</dict>
+</plist>
