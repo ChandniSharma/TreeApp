@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "989098400535",
+    "firebase_url": "https://treeapp-3064e.firebaseio.com",
+    "project_id": "treeapp-3064e",
+    "storage_bucket": "treeapp-3064e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989098400535:android:5eae8f07ebf598f0",
+        "android_client_info": {
+          "package_name": "com.kkpl.treeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989098400535-9gpgpjgobus2adr6u9on8e29t1dba5ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChzV1osDAP-mHV4qlN2CVY9Re_FBbaWPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989098400535-9gpgpjgobus2adr6u9on8e29t1dba5ga.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "989098400535-p8kfepnha3bphn6lnl7po5qccacs1ivj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kkpl.TreeApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
