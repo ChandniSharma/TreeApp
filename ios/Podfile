@@ -29,6 +29,8 @@ target 'TreeApp' do
 
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
 end
 
 target 'TreeApp-tvOS' do

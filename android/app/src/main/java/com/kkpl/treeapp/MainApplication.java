@@ -1,7 +1,12 @@
 package com.kkpl.treeapp;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.pm.PackageManager;
 import android.support.multidex.MultiDexApplication;
+import android.support.v4.app.ActivityCompat;
 
+import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -27,6 +32,7 @@ import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 import java.util.Arrays;
 import java.util.List;
+
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
 public class MainApplication extends MultiDexApplication implements ReactApplication {
@@ -37,12 +43,14 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
       return BuildConfig.DEBUG;
     }
 
+    @SuppressLint("MissingPermission")
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
         new RNFirebasePackage(),
         // add/remove these packages as appropriate
+        new LinearGradientPackage(),
         new RNFirebaseAdMobPackage(),
         new RNFirebaseAnalyticsPackage(),
         new RNFirebaseAuthPackage(),
