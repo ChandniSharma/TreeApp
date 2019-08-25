@@ -2,7 +2,9 @@ import React from 'react';
 import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
 import { createStackNavigator, createAppContainer, createDrawerNavigator, DrawerItems, } from 'react-navigation';
 import Benefits from './src/Benefits'
-import SideMenu from './src/sidemenu/SideMenu';
+import SideMenu from './src/common/sidemenu/SideMenu';
+import Step1 from './src/Step1';
+import Step2 from './src/Step2';
 
 import firebase from 'react-native-firebase';
 
@@ -10,6 +12,16 @@ const DrawerNavigator = new createDrawerNavigator(
   {
     Benefits: {
       screen: Benefits, navigationOptions: {
+        header: null
+      },
+    },
+    Step1: {
+      screen: Step1, navigationOptions: {
+        header: null
+      },
+    },
+    Step2: {
+      screen: Step2, navigationOptions: {
         header: null
       },
     },
@@ -21,11 +33,11 @@ const DrawerNavigator = new createDrawerNavigator(
   );
 
   const navigator = createStackNavigator({
-    Benefits:{screen:Benefits}
+    DrawerNavigator:{screen:DrawerNavigator}
 
   }, 
   {
-    initialRouteName:'Benefits', 
+    initialRouteName:'DrawerNavigator', 
     gesturesEnabled: false,
     headerMode: 'none',
   }
@@ -49,8 +61,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-     
-          <RootNavigator />
+     <View style={{flex:1}}>
+ <RootNavigator />
+     </View>
+         
       );
   }
 }

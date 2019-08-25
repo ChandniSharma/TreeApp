@@ -27,6 +27,8 @@ target 'TreeApp' do
 
   pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
 end
 
 target 'TreeApp-tvOS' do

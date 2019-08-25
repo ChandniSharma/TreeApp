@@ -28,7 +28,7 @@ class SideMenu extends Component {
             name:'Person name',
             email:''
         }
-      this.arrayData = ["Dashboard","New Request", "My Packages", "Payment History", "Settings", "Logout" ];
+      this.arrayData = ["Profile","History", "Suggestions", "Donate", "Connect With Us", "Logout" ];
     }
 
     componentWillMount(){
@@ -57,7 +57,7 @@ console.log(" in side menu ");
  {/* <ScrollView> */}
                     <View style={styles.header}>
                       
-                        <IconAntDesign name="close" style={styles.close} onPress={this.navigateToScreen('')}/>
+                        {/* <IconAntDesign name="close" style={styles.close} onPress={this.navigateToScreen('')}/> */}
 
                        
                         <View style={{flexDirection:'row'}}>
@@ -70,7 +70,7 @@ console.log(" in side menu ");
                             <View style={{ marginTop:'27%'}}>
                                 <Text style={styles.name}>Test User</Text>
                                 <View style={{flexDirection:'row'}}>
-                                    <IconZocial name='email' style={{fontSize: 18, paddingLeft:5, paddingRight:5, paddingTop:2}}/>
+                                    {/* <IconZocial name='email' style={{fontSize: 18, paddingLeft:5, paddingRight:5, paddingTop:2}}/> */}
                                     <Text style={styles.emailText}>test@gmail.com</Text>
                                 </View>
                            </View>
@@ -80,7 +80,7 @@ console.log(" in side menu ");
                         <View style={{marginTop:'10%'}}>
                         <TouchableOpacity onPress={this.navigateToScreen('Dashboard')}>
                             <View style={styles.navItemStyle}>
-                                <IconAntDesign style={styles.icon} name="dashboard"  />
+                                {/* <IconAntDesign style={styles.icon} name="dashboard"  /> */}
                                 <Text style={styles.text}>
                                     {this.arrayData[0]}
                                 </Text>
@@ -89,7 +89,7 @@ console.log(" in side menu ");
                         <View style={styles.viewSingleLine}/>
                         <TouchableOpacity onPress={this.navigateToScreen('NewRequestPickupLocation')}>
                             <View style={styles.navItemStyle}>
-                                <IconFontAwesome5 style={styles.icon} name="truck"  />
+                                {/* <IconFontAwesome5 style={styles.icon} name="truck"  /> */}
                                 <Text style={styles.text}>
                                     {this.arrayData[1]}
                                 </Text>
@@ -98,7 +98,7 @@ console.log(" in side menu ");
                         <View style={styles.viewSingleLine}/>
                         <TouchableOpacity onPress={this.navigateToScreen('MyPackages')}>
                             <View style={styles.navItemStyle}>
-                                <IconSimpleLineIcons style={styles.icon} name="bag"  />
+                                {/* <IconSimpleLineIcons style={styles.icon} name="bag"  /> */}
                                 <Text style={styles.text}>
                                 {this.arrayData[2]}
                                 </Text>
@@ -107,7 +107,7 @@ console.log(" in side menu ");
                         <View style={styles.viewSingleLine}/>
                         <TouchableOpacity onPress={this.navigateToScreen('PaymentHistory')}>
                             <View style={styles.navItemStyle}>
-                                <IconMaterialIcons style={styles.icon} name="payment"  />
+                                {/* <IconMaterialIcons style={styles.icon} name="payment"  /> */}
                                 <Text style={styles.text}>
                                 {this.arrayData[3]}
                                 </Text>
@@ -116,7 +116,7 @@ console.log(" in side menu ");
                         <View style={styles.viewSingleLine}/>
                         <TouchableOpacity onPress={this.navigateToScreen('MySettings')}>
                             <View style={styles.navItemStyle}>
-                                <IconAntDesign style={styles.icon} name="setting"  />
+                                {/* <IconAntDesign style={styles.icon} name="setting"  /> */}
 
                                 <Text style={styles.text}>
                                 {this.arrayData[4]}
@@ -127,7 +127,7 @@ console.log(" in side menu ");
                         <View style={styles.viewSingleLine}/>
                         <TouchableOpacity onPress={this.onClickLogout.bind(this)}>
                             <View style={styles.navItemStyle}>
-                                <IconMaterialCommunityIcons style={styles.icon} name="logout"  />
+                                {/* <IconMaterialCommunityIcons style={styles.icon} name="logout"  /> */}
                                 <Text style={styles.text}>
                                 {this.arrayData[5]}
                                 </Text>

@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Platform, Image, Text, View, ScrollView, Button } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 import firebase from 'react-native-firebase';
 
 export default class Benefits extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      gradientColors:['#4c669f', '#3b5998', '#192f6a']
+    };
   }
 
   async componentDidMount() {
@@ -16,34 +19,46 @@ export default class Benefits extends React.Component {
 
     // await firebase.analytics().logEvent('foo', { bar: '123'});
   }
-
+moveToNextView =() =>{
+ this.props.navigation.navigate('Step1')
+}
   render() {
     return (
-      <ScrollView>
+      <LinearGradient colors={this.state.gradientColors} style={{flex:1}}>
+
+      <ScrollView >
         <View style={styles.container}>
-          <Image source={require('../assets/Images/cartoon_tree.jpeg')} style={[styles.logo]}/>
+          <Image source={require('../assets/Images/cartoon_tree.jpeg')} style={[styles.logo]} />
           <Text style={styles.welcome}>
-           Benefits Of Tree
+            Benefits Of Tree
           </Text>
           <Text style={styles.instructions}>
-          नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
+            नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
           </Text>
           <Text style={styles.instructions}>
-          नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
+            नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
           </Text>
 
           <Text style={styles.instructions}>
-          नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
+            नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
           </Text>
           <Text style={styles.instructions}>
-          नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
+            नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
           </Text>
           <Text style={styles.instructions}>
-          नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
+            नीम सदियों से गुणों की खान माना जाता है। नीम का प्रयोग संख्य कार्यों के लिए होता है। बैक्टीरिया नाशक, कीटाणुनाशक और अन्य कई गुणों से भरपूर नीम का प्रयोग स्वास्थ्य संबंधी समस्याओं, त्वचा रोगों, ऊर्वरक के तौर पर और दांत से संबंधित बीमारियों से इलाज के लिए किया जाता है।
           </Text>
-         
+
+          <Button
+            onPress={()=>this.moveToNextView()}
+            title="Move Next"
+            color="white"
+            style={{backgroundColor:'white'}}
+            accessibilityLabel="Learn more about this purple button"
+          />
         </View>
       </ScrollView>
+      </LinearGradient>
     );
   }
 }
@@ -53,8 +68,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'transparent',
   },
+ 
   logo: {
     height: 120,
     marginBottom: 16,
@@ -69,7 +85,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: 'white',
     marginBottom: 5,
   },
   modules: {

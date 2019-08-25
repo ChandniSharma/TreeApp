@@ -27,6 +27,7 @@ import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 import java.util.Arrays;
 import java.util.List;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
 public class MainApplication extends MultiDexApplication implements ReactApplication {
 
@@ -55,7 +56,8 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
         new RNFirebaseMessagingPackage(),
         new RNFirebaseNotificationsPackage(),
         new RNFirebasePerformancePackage(),
-        new RNFirebaseStoragePackage()
+        new RNFirebaseStoragePackage(),
+        new RNGestureHandlerPackage()
       );
     }
 
